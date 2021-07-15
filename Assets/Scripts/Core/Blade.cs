@@ -44,5 +44,13 @@ namespace Ninja_Slicer.Core
         {
             transform.eulerAngles += Vector3.forward * rotationSpeed * rotationMultiplier;
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.layer == 8)
+            { 
+                Debug.LogError(other.name, gameObject);
+            }
+        }
     }
 }
