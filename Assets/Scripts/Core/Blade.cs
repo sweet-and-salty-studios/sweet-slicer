@@ -1,62 +1,48 @@
 ﻿using Utilities;
 using UnityEngine;
 
-public class Blade : MonoBehaviour
+namespace Ninja_Slicer.Core
 {
-    [SerializeField] private float sensitivity = 5f;
-    [SerializeField] private string mouseInputeAxis = "Mouse Y";
-    [SerializeField] private LayerMask slicableLayers = default;
-
-    private Collider slideCollider = default;
-
-    private void Awake()
+    public class Blade : Weapon
     {
-        slideCollider = GetComponent<Collider>();    
-    }
-
-    private void Update()
-    {
-        transform.eulerAngles += Vector3.forward * -Input.GetAxis(mouseInputeAxis) * sensitivity;
-
-        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        public override void Attack()
         {
-            TrySliceGameObjects();
+            var sliceableColliders = Physics.OverlapBox(effectAreaCollider.bounds.center, effectAreaCollider.bounds.extents, Quaternion.identity, hitLayers);
+
+            foreach(var sliceableCollider in sliceableColliders)
+            {
+                var sliceableGameObject = sliceableCollider.gameObject;
+                var sliceableParent = sliceableGameObject.transform.parent;
+
+                Material crossSectionMaterial = null;
+
+                var slicableHull = sliceableGameObject.Slice(transform.position, transform.up, crossSectionMaterial);
+
+                if(slicableHull == null)
+                    continue;
+
+                var upperObject = slicableHull.CreateUpperHull(sliceableGameObject, null);
+                var lowerObject = slicableHull.CreateLowerHull(sliceableGameObject, null);
+
+                upperObject.transform.SetParent(sliceableParent, false);
+                lowerObject.transform.SetParent(sliceableParent, false);
+
+                upperObject.layer = sliceableGameObject.layer;
+                lowerObject.layer = sliceableGameObject.layer;
+
+                upperObject.AddComponent<MeshCollider>().convex = true;
+                lowerObject.AddComponent<MeshCollider>().convex = true;
+
+                upperObject.AddComponent<Rigidbody>().AddForce((Vector3.right + Vector3.up) * 4, ForceMode.Impulse);
+                lowerObject.AddComponent<Rigidbody>().AddForce((Vector3.left + Vector3.up) * 4, ForceMode.Impulse);
+
+                sliceableGameObject.SetActive(false);
+            }
         }
-    }
 
-    private void TrySliceGameObjects()
-    {
-        var sliceableColliders = Physics.OverlapBox(slideCollider.bounds.center, slideCollider.bounds.extents, Quaternion.identity, slicableLayers);
-
-        foreach(var sliceableCollider in sliceableColliders)
+        public override void Rotation(float rotationSpeed)
         {
-            var sliceableGameObject = sliceableCollider.gameObject;
-            var sliceableParent = sliceableGameObject.transform.parent;
-
-            var slicableHull = SliceGameObject(sliceableGameObject, null);
-            if(slicableHull == null) continue;
-
-            var upperObject = slicableHull.CreateUpperHull(sliceableGameObject, null);
-            var lowerObject = slicableHull.CreateLowerHull(sliceableGameObject, null);
-
-            upperObject.transform.SetParent(sliceableParent, false);
-            lowerObject.transform.SetParent(sliceableParent, false);
-
-            upperObject.layer = sliceableGameObject.layer;
-            lowerObject.layer = sliceableGameObject.layer;
-
-            upperObject.AddComponent<MeshCollider>().convex = true;
-            lowerObject.AddComponent<MeshCollider>().convex = true;
-
-            upperObject.AddComponent<Rigidbody>().AddForce((Vector3.right + Vector3.up) * 4, ForceMode.Impulse);
-            lowerObject.AddComponent<Rigidbody>().AddForce((Vector3.left + Vector3.up) * 4, ForceMode.Impulse);
-
-            sliceableGameObject.SetActive(false);
+            transform.eulerAngles += Vector3.forward * rotationSpeed * rotationMultiplier;
         }
-    }
-
-    public SlicedHull SliceGameObject(GameObject gameObject, Material crossSectionMaterial = null) 
-    {
-        return gameObject.Slice(transform.position, transform.up, crossSectionMaterial);
     }
 }
