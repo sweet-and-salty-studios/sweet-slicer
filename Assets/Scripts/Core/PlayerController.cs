@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Ninja_Slicer.Core
+namespace NinjaSlicer.Core
 {
     public class PlayerController : MonoBehaviour
     {
@@ -29,11 +29,16 @@ namespace Ninja_Slicer.Core
             if(animatorController == null || characterInput == null)
                 return;
 
-            if(characterInput.IsAttackKeyPressed)
+            if(characterInput.IsAttackKeyDown)
             {
-                animatorController.SetAttackTrigger();
+                Time.timeScale = 0.25f;
+                animatorController.IsAttacking(true);
+            }
 
-                currentWeapon.Attack();
+            if(characterInput.IsAttackKeyUp)
+            {
+                Time.timeScale = 1f;
+                animatorController.IsAttacking(false);
             }
 
             animatorController.SetMovementSpeed(characterEngine.VelocityMagnitude);

@@ -1,14 +1,12 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Ninja_Slicer.Core
+namespace NinjaSlicer.Core
 {
     public abstract class Weapon : MonoBehaviour
     {
         [Space]
         [Header("Settings")]
         [SerializeField] protected LayerMask hitLayers = default;
-        [SerializeField] protected float rotationMultiplier = 5f;
 
         protected Collider effectAreaCollider = default;
 
@@ -17,7 +15,6 @@ namespace Ninja_Slicer.Core
             effectAreaCollider = GetComponent<Collider>();
         }
 
-        public abstract void Rotation(float roattionSpeed);
         public abstract void Attack();
     }
 

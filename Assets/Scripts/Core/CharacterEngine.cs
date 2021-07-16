@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Ninja_Slicer.Core
+namespace NinjaSlicer.Core
 {
     public class CharacterEngine : MonoBehaviour
     {

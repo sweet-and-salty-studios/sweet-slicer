@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 
-namespace Ninja_Slicer.Core
+namespace NinjaSlicer.Core
 {
     public class AnimatorController : MonoBehaviour
     {
         private Animator animator = default;
 
         private int movementSpeedHash = default;
-        private int attackHash = default;
+        private int attackingHash = default;
 
         private void Awake()
         {
@@ -17,12 +17,12 @@ namespace Ninja_Slicer.Core
         private void Start()
         {
             movementSpeedHash = Animator.StringToHash("MovementSpeed");
-            attackHash = Animator.StringToHash("Attack");
+            attackingHash = Animator.StringToHash("IsAttacking");
         }
 
-        public void SetAttackTrigger()
+        public void IsAttacking(bool isAttacking) 
         {
-            animator.SetTrigger(attackHash);
+            animator.SetBool(attackingHash, isAttacking);
         }
 
         public void SetMovementSpeed(float speed)
