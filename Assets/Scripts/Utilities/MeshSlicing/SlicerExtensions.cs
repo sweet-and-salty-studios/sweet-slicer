@@ -7,7 +7,6 @@ namespace Utilities.MeshSlicing
      */
     public static class SlicerExtensions
     {
-
         /**
          * SlicedHull Return functions and appropriate overrides!
          */
@@ -36,7 +35,7 @@ namespace Utilities.MeshSlicing
 
             return Slice(obj, cuttingPlane, textureRegion, crossSectionMaterial);
         }
-
+        
         public static SlicedHull Slice(this GameObject obj, Plane pl, TextureRegion textureRegion, Material crossSectionMaterial = null)
         {
             return Slicer.Slice(obj, pl, textureRegion, crossSectionMaterial);

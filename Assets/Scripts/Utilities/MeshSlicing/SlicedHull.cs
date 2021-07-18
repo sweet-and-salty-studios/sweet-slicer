@@ -4,13 +4,13 @@ namespace Utilities.MeshSlicing
 {
     public sealed class SlicedHull
     {
-        private Mesh upper_hull;
-        private Mesh lower_hull;
+        private readonly Mesh upper_hull = default;
+        private readonly Mesh lower_hull = default;
 
         public SlicedHull(Mesh upperHull, Mesh lowerHull)
         {
-            this.upper_hull = upperHull;
-            this.lower_hull = lowerHull;
+            upper_hull = upperHull;
+            lower_hull = lowerHull;
         }
 
         public GameObject CreateUpperHull(GameObject original)
@@ -109,15 +109,9 @@ namespace Utilities.MeshSlicing
             return CreateEmptyObject("Lower_Hull", lower_hull);
         }
 
-        public Mesh upperHull
-        {
-            get { return this.upper_hull; }
-        }
+        public Mesh UpperHull => upper_hull;
 
-        public Mesh lowerHull
-        {
-            get { return this.lower_hull; }
-        }
+        public Mesh LowerHull => lower_hull;
 
         private static GameObject CreateEmptyObject(string name, Mesh hull)
         {
@@ -126,12 +120,16 @@ namespace Utilities.MeshSlicing
                 return null;
             }
 
-            GameObject newObject = new GameObject(name);
+            var newObject = new GameObject(name);
 
             newObject.AddComponent<MeshRenderer>();
             MeshFilter filter = newObject.AddComponent<MeshFilter>();
 
             filter.mesh = hull;
+
+            var meshCollider = newObject.AddComponent<MeshCollider>();
+            meshCollider.sharedMesh = hull;
+            meshCollider.convex = true;
 
             return newObject;
         }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4974155868744600027}
   - component: {fileID: 4974155868744600025}
   - component: {fileID: 4974155868744600026}
+  - component: {fileID: 5205997785840301397}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01 (3)
   m_TagString: Untagged
@@ -80,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5205997785840301397
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974155868744600028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000024, y: 0.5000015, z: 2.0000021}
+  m_Center: {x: 0.00000011920932, y: 0.24999514, z: 0.00000011920932}
 --- !u!1 &4974155869463306929
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +105,7 @@ GameObject:
   - component: {fileID: 4974155869463306928}
   - component: {fileID: 4974155869463306926}
   - component: {fileID: 4974155869463306927}
+  - component: {fileID: 173873823613335758}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_Wall_Escape_Pod_White_01 (1)
   m_TagString: Untagged
@@ -165,6 +180,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &173873823613335758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974155869463306929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999964, y: 2.8204644, z: 0.5169309}
+  m_Center: {x: -0.00000068545336, y: 1.410232, z: 0.0000001788139}
 --- !u!1 &4974155869635217931
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +270,7 @@ GameObject:
   - component: {fileID: 4974155870066282110}
   - component: {fileID: 4974155870066282107}
   - component: {fileID: 4974155870066282108}
-  - component: {fileID: 4974155870066282109}
+  - component: {fileID: 7608232319855535210}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01
   m_TagString: Untagged
@@ -312,7 +340,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4974155870066282109
+--- !u!65 &7608232319855535210
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,6 +396,7 @@ GameObject:
   - component: {fileID: 4974155870404376521}
   - component: {fileID: 4974155870404376519}
   - component: {fileID: 4974155870404376520}
+  - component: {fileID: 5158453343791348880}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01 (2)
   m_TagString: Untagged
@@ -437,6 +466,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5158453343791348880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974155870404376522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.000002, y: 0.5000015, z: 2.0000017}
+  m_Center: {x: 0.00000011920929, y: 0.24999514, z: 0.00000059604645}
 --- !u!1 &4974155870467337412
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +490,7 @@ GameObject:
   - component: {fileID: 4974155870467337411}
   - component: {fileID: 4974155870467337409}
   - component: {fileID: 4974155870467337410}
+  - component: {fileID: 8479945141739834680}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01 (1)
   m_TagString: Untagged
@@ -517,6 +560,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8479945141739834680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974155870467337412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.000002, y: 0.5000015, z: 2.0000017}
+  m_Center: {x: 0.00000011920929, y: 0.24999514, z: 0.00000011920929}
 --- !u!1 &7460367142850120660
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +584,7 @@ GameObject:
   - component: {fileID: 4334640671710073123}
   - component: {fileID: 4176311934857350162}
   - component: {fileID: 7324583984395110285}
+  - component: {fileID: 3629452770381740718}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_Wall_Escape_Pod_White_01 (2)
   m_TagString: Untagged
@@ -602,3 +659,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3629452770381740718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460367142850120660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999964, y: 2.8204644, z: 0.5169309}
+  m_Center: {x: -0.0000002086162, y: 1.410232, z: 0.0000001788139}

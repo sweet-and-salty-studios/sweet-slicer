@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 541906749}
   - component: {fileID: 541906753}
   - component: {fileID: 541906752}
-  - component: {fileID: 541906751}
-  - component: {fileID: 541906750}
+  - component: {fileID: 7101585718178214375}
   m_Layer: 0
   m_Name: SciFi_Modular_Wall_Trim_White_02 (3)
   m_TagString: Untagged
@@ -82,27 +81,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &541906751
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541906748}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &541906750
-MeshCollider:
+--- !u!65 &7101585718178214375
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111,10 +91,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.500001, z: 0.5000018}
+  m_Center: {x: 0.000000059604645, y: 0.24999514, z: 0.000000074505806}
 --- !u!1 &1114235883
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,8 +105,7 @@ GameObject:
   - component: {fileID: 1114235884}
   - component: {fileID: 1114235888}
   - component: {fileID: 1114235887}
-  - component: {fileID: 1114235886}
-  - component: {fileID: 1114235885}
+  - component: {fileID: 4433170906049902573}
   m_Layer: 0
   m_Name: SciFi_Modular_Wall_Trim_White_02 (19)
   m_TagString: Untagged
@@ -197,27 +175,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &1114235886
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114235883}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1114235885
-MeshCollider:
+--- !u!65 &4433170906049902573
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -226,10 +185,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.500001, z: 0.5000019}
+  m_Center: {x: 0.000000059604634, y: 0.24999514, z: 0.000000074505806}
 --- !u!1 &1838113944
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,8 +199,7 @@ GameObject:
   - component: {fileID: 1838113945}
   - component: {fileID: 1838113949}
   - component: {fileID: 1838113948}
-  - component: {fileID: 1838113947}
-  - component: {fileID: 1838113946}
+  - component: {fileID: 8273124802493757712}
   m_Layer: 0
   m_Name: SciFi_Modular_Wall_Trim_White_02 (20)
   m_TagString: Untagged
@@ -312,27 +269,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &1838113947
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838113944}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1838113946
-MeshCollider:
+--- !u!65 &8273124802493757712
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -341,10 +279,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.500001, z: 0.5000019}
+  m_Center: {x: 0.000000059604634, y: 0.24999514, z: 0.000000074505806}
 --- !u!1 &2132645831
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,8 +293,7 @@ GameObject:
   - component: {fileID: 2132645832}
   - component: {fileID: 2132645836}
   - component: {fileID: 2132645835}
-  - component: {fileID: 2132645834}
-  - component: {fileID: 2132645833}
+  - component: {fileID: 1631403876780419262}
   m_Layer: 0
   m_Name: SciFi_Modular_Wall_Trim_White_02 (4)
   m_TagString: Untagged
@@ -427,27 +363,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &2132645834
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132645831}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &2132645833
-MeshCollider:
+--- !u!65 &1631403876780419262
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -456,10 +373,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 84d4c430c1040dc4487ec0f98f5ddcd7, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0000005, y: 0.500001, z: 0.5000018}
+  m_Center: {x: 0.000000059604645, y: 0.24999514, z: 0.000000074505806}
 --- !u!1 &3100478340728047721
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,8 +387,7 @@ GameObject:
   - component: {fileID: 3103395823969370135}
   - component: {fileID: 3132062846290828233}
   - component: {fileID: 3122135051640771673}
-  - component: {fileID: 3050037974218279193}
-  - component: {fileID: 3163704005811784705}
+  - component: {fileID: 1591789966290714531}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_08 (1)
   m_TagString: Untagged
@@ -542,27 +457,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &3050037974218279193
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3100478340728047721}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a6f7b55a61926414697d5b6c34f6721f, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &3163704005811784705
-MeshCollider:
+--- !u!65 &1591789966290714531
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -571,10 +467,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a6f7b55a61926414697d5b6c34f6721f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.000002, y: 0.5000015, z: 2.0000017}
+  m_Center: {x: 0.00000011920929, y: 0.24999514, z: 0.00000011920929}
 --- !u!1 &3100478341056843694
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,8 +481,7 @@ GameObject:
   - component: {fileID: 3103395824315336656}
   - component: {fileID: 3132062844485508110}
   - component: {fileID: 3122135052503683998}
-  - component: {fileID: 3050037974543929054}
-  - component: {fileID: 3163704007885278150}
+  - component: {fileID: 4921227524778497}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_08
   m_TagString: Untagged
@@ -657,27 +551,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &3050037974543929054
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3100478341056843694}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a6f7b55a61926414697d5b6c34f6721f, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &3163704007885278150
-MeshCollider:
+--- !u!65 &4921227524778497
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -686,10 +561,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a6f7b55a61926414697d5b6c34f6721f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.000002, y: 0.5000015, z: 2.0000017}
+  m_Center: {x: 0.00000011920929, y: 0.24999514, z: 0.00000011920929}
 --- !u!1 &8665948044218976716
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +735,7 @@ GameObject:
   - component: {fileID: 8665948044890565488}
   - component: {fileID: 8665948044890565490}
   - component: {fileID: 8665948044890565489}
+  - component: {fileID: 7372658653558901870}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01 (1)
   m_TagString: Untagged
@@ -930,6 +805,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7372658653558901870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665948044890565495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.000002, y: 0.5000015, z: 2.0000017}
+  m_Center: {x: 0.00000011920929, y: 0.24999514, z: 0.00000011920929}
 --- !u!1 &8665948044961788025
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +829,7 @@ GameObject:
   - component: {fileID: 8665948044961788026}
   - component: {fileID: 8665948044961788020}
   - component: {fileID: 8665948044961788027}
+  - component: {fileID: 3744812757088815996}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01 (2)
   m_TagString: Untagged
@@ -1010,6 +899,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3744812757088815996
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665948044961788025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.000002, y: 0.5000015, z: 2.0000017}
+  m_Center: {x: 0.00000011920929, y: 0.24999514, z: 0.00000011920929}
 --- !u!1 &8665948045262595836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +959,7 @@ GameObject:
   - component: {fileID: 8665948045548064360}
   - component: {fileID: 8665948045548064362}
   - component: {fileID: 8665948045548064361}
+  - component: {fileID: 8727886720829339659}
   m_Layer: 0
   m_Name: SciFi_Modular_Tile_White_01 (3)
   m_TagString: Untagged
@@ -1126,3 +1029,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8727886720829339659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665948045548064367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000024, y: 0.5000015, z: 2.0000021}
+  m_Center: {x: -0.0000017881393, y: 0.24999514, z: 0.00000011920932}

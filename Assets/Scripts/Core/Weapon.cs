@@ -14,8 +14,5 @@ namespace NinjaSlicer.Core
         {
             effectAreaCollider = GetComponent<Collider>();
         }
-
-        public abstract void Attack();
     }
-
 }

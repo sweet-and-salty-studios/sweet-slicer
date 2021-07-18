@@ -4,10 +4,9 @@ namespace NinjaSlicer.Core
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private Weapon startingWeaponPrefab = default;
-        [SerializeField] private Weapon currentWeapon = default;
         [SerializeField] private Transform weaponPivot = default;
 
+        private Weapon currentWeapon = default;
         private CharacterEngine characterEngine = default;
         private CharacterInput characterInput = default;
         private AnimatorController animatorController = default;
@@ -21,7 +20,7 @@ namespace NinjaSlicer.Core
 
         private void Start()
         {
-            currentWeapon = Instantiate(startingWeaponPrefab, weaponPivot);
+            currentWeapon = Instantiate(ResourceManager.Instance.EnergyBladePrefab, weaponPivot);
         }
 
         private void Update()
